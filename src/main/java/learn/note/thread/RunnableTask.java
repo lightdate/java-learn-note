@@ -1,0 +1,15 @@
+package learn.note.thread;
+
+/**
+ * 实现Runnable 接口
+ */
+public class RunnableTask implements Runnable {
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getId() + " value: " + i);
+        }
+
+    }
+}
